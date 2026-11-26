@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id" class="tanpa-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <title>TUNTAS</title>
+  <meta name="description" content="Konsep platform pelaporan masalah lingkungan dan fasilitas umum.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lompat" href="#isi">Langsung ke isi</a>
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0B3D2E"/><path d="M16 5.5c-4.7 0-8 3.4-8 7.8 0 5.3 5.6 10.3 8 13.2 2.4-2.9 8-7.9 8-13.2 0-4.4-3.3-7.8-8-7.8z" fill="#A3E635"/><path d="M12 13.4l2.9 2.9 5.2-5.4" fill="none" stroke="#0B3D2E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> TUNTAS</a>
+      <button class="tombol garis tombol-menu" type="button" aria-expanded="false" aria-controls="navigasi">Menu</button>
+      <nav class="navigasi" id="navigasi" aria-label="Menu utama">
+        <ul class="menu">
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="index.html#data">Data</a></li>
+          <li><a href="index.html#alur">Cara kerja</a></li>
+          <li><a href="index.html#fitur">Fitur</a></li>
+          <li><a href="index.html#pengguna">Pengguna</a></li>
+          <li><a href="wireframe.html">Wireframe</a></li>
+          <li><a href="perancangan.html">Perancangan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="isi">
+<section class="hero">
+<div class="wrap">
+<div class="hero-teks">
+<h1>Laporkan masalah, <span>pantau sampai tuntas</span></h1>
+<p>TUNTAS adalah konsep platform untuk melaporkan masalah lingkungan dan fasilitas umum. Warga mengirim foto dan lokasi, pengelola menindaklanjuti, dan perkembangannya bisa dilihat.</p>
+<div class="baris-tombol"><a class="tombol" href="#alur">Lihat cara kerja</a><a class="tombol garis" href="wireframe.html">Lihat wireframe</a></div>
+<p class="catatan">Aplikasi TUNTAS masih berupa rencana. Website ini menjelaskan konsep dan rancangannya.</p>
+</div>
+<div class="panggung" data-demo>
+<div class="hp">
+<div class="hp-judul"><span>Detail laporan</span><span class="status s-menunggu" data-lencana>Menunggu Verifikasi</span></div>
+<svg class="hp-foto" viewBox="0 0 260 120" role="img" aria-label="Ilustrasi saluran air tersumbat sampah">
+<rect width="260" height="120" fill="#D1FAE5"/><rect y="70" width="260" height="50" fill="#0B3D2E"/>
+<path d="M30 78h200l-18 30H48z" fill="#15803D"/><path d="M52 94q14-7 28 0t28 0 28 0 28 0 28 0" fill="none" stroke="#D1FAE5" stroke-width="3"/>
+<circle cx="112" cy="86" r="11" fill="#A3E635"/><rect x="126" y="80" width="26" height="14" rx="4" fill="#FFFFFF" transform="rotate(-14 139 87)"/>
+<circle cx="164" cy="90" r="8" fill="#22C55E"/><path d="M30 70V44M30 52c-14 0-14-18-3-18 1-14 22-12 20 2 12 3 8 18-5 16z" stroke="#15803D" stroke-width="4" fill="#22C55E"/></svg>
+<div><h3>Saluran drainase tersumbat</h3><small>Kategori: Drainase. Lokasi: titik GPS pelapor.</small></div>
+<ol class="jejak">
+<li class="lewat kini">Menunggu Verifikasi</li><li>Diverifikasi</li><li>Sedang Diproses</li><li>Selesai</li>
+</ol>
+<small data-keterangan aria-live="polite">Laporan terkirim dan menunggu diperiksa admin.</small>
+<div class="grid" data-kontrol hidden>
+<button class="tombol" type="button" data-lanjut>Lanjutkan status</button>
+<button class="tombol garis" type="button" data-tolak>Contoh ditolak</button>
+</div>
+</div>
+<p>Contoh tampilan rancangan, bukan laporan asli.</p>
+</div>
+</div>
+</section>
+<section class="bagian " id="tentang">
+<div class="wrap">
+<div class="kepala"><h2>Apa itu TUNTAS?</h2><p>Platform pelaporan dan pengelolaan masalah yang menghubungkan masyarakat dengan admin dan petugas, agar setiap laporan bisa dicatat, dipantau, dan ditindaklanjuti. Fokus masalahnya:</p></div>
+<div class="grid g4">
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 21M17 3l3 18M12 4v3M12 11v3M12 18v3"/></svg></span><h3>Jalan rusak</h3><p>Jalan berlubang, retak, atau rusak berat.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21h6M10 21V5a2 2 0 0 1 2-2h5v3M14 9h6l-1.500-3h-3z"/></svg></span><h3>Lampu jalan</h3><p>Penerangan jalan mati atau rusak.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="17" rx="3"/><path d="M12 19v3"/><circle cx="12" cy="6" r="1"/><circle cx="12" cy="10.500" r="1"/><circle cx="12" cy="15" r="1"/></svg></span><h3>Lampu lalu lintas</h3><p>Tidak berfungsi sehingga persimpangan rawan.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.500 6 10.500a6 6 0 0 1-12 0C6 9.500 12 3 12 3z"/></svg></span><h3>Drainase</h3><p>Saluran tersumbat yang berpotensi menyebabkan banjir.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M12 13V4M12 8 8 5M12 10l4-3"/></svg></span><h3>Irigasi</h3><p>Saluran rusak, tersumbat, atau penuh sedimentasi.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9h20M2 18V6M22 18V6M2 9c3 7 17 7 20 0M8 13v5M16 13v5"/></svg></span><h3>Jembatan</h3><p>Jembatan rusak yang mengganggu akses.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 11v6M14 11v6"/></svg></span><h3>Sampah</h3><p>Tumpukan sampah di lingkungan.</p></article>
+<article class="kartu isi-mint"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M10 21v-6h4v6"/></svg></span><h3>Fasilitas umum</h3><p>Fasilitas bersama yang tidak layak dipakai.</p></article>
+</div>
+</div>
+</section>
+<section class="bagian mint" id="masalah">
+<div class="wrap">
+<div class="kepala"><h2>Mengapa TUNTAS dibutuhkan?</h2><p>Banyak masalah lingkungan dan fasilitas umum berpotensi dibiarkan terlalu lama tanpa penanganan yang jelas. Beberapa kendala yang sering terjadi:</p></div>
+<div class="grid g3">
+<article class="kartu"><h3>Bingung melapor ke mana</h3><p>Masyarakat tidak tahu pihak atau saluran yang bertanggung jawab.</p></article>
+<article class="kartu"><h3>Proses kurang praktis</h3><p>Melapor langsung butuh waktu. Pesan pribadi dan media sosial belum tentu tercatat.</p></article>
+<article class="kartu"><h3>Lokasi tidak jelas</h3><p>Tanpa alamat atau titik yang akurat, petugas sulit menemukan masalahnya.</p></article>
+<article class="kartu"><h3>Tindak lanjut tidak terlihat</h3><p>Pelapor tidak tahu apakah laporannya diterima, diproses, atau selesai.</p></article>
+<article class="kartu"><h3>Data tidak terorganisasi</h3><p>Laporan tersebar di banyak saluran sehingga sulit dipantau dan dievaluasi.</p></article>
+<article class="kartu"><h3>Penanganan terhambat</h3><p>Selain soal pelaporan, penanganan juga bisa terkendala anggaran dan koordinasi.</p></article>
+</div>
+</div>
+</section>
+<section class="bagian gelap" id="data">
+<div class="wrap">
+<div class="kepala"><h2>Kondisi infrastruktur dan lingkungan</h2><p>Contoh data yang menunjukkan perlunya pelaporan yang rapi. Sumber setiap angka bisa dibuka.</p></div>
+<div class="grid g3">
+<article class="data"><div class="angka">191,56<small>km</small></div><p>Jalan nasional dalam kondisi tidak mantap di Kalimantan Tengah.</p><p class="asal">Data 2024 menurut detik, 31 Oktober 2025. Ada media lain yang menyebut tahun 2025.<br>Sumber: <a href="https://www.detik.com/kalimantan/berita/d-8187618/jalan-nasional-rusak-terpanjang-di-ri-ada-di-kalteng-kaltim-ini-rankingnya" target="_blank" rel="noopener">detik</a></p></article>
+<article class="data"><div class="angka">±300<small>titik</small></div><p>Lampu jalan di Cianjur masih menunggu perbaikan dari target 1.000 titik. Sebanyak 700 titik sudah diperbaiki.</p><p class="asal">Januari sampai Agustus 2026.<br>Sumber: <a href="https://www.antaranews.com/berita/5736935/dishub-cianjur-perbaiki-700-titik-pju-sepanjang-tahun-2026" target="_blank" rel="noopener">ANTARA</a></p></article>
+<article class="data"><div class="angka">5<small>titik</small></div><p>Persimpangan dan ruas jalan di Bandung yang lampu lalu lintasnya terdampak pencurian perangkat.</p><p class="asal">Keadaan pada 1 Oktober 2026, saat perbaikan masih berjalan.<br>Sumber: <a href="https://www.radarbandung.id/2026/10/01/dishub-bandung-kejar-perbaikan-lima-traffic-light-yang-dicuri/" target="_blank" rel="noopener">Radar Bandung</a></p></article>
+<article class="data"><div class="angka">±46<small>%</small></div><p>Dari 7,1 juta hektare daerah irigasi permukaan di Indonesia dalam kondisi rusak.</p><p class="asal">Data 2014.<br>Sumber: <a href="https://sda.pu.go.id/assets/uploads/files/sewasembada_pangan_bukan_sekadar_angan_1767095757_9329193d4672149bf0f0.pdf" target="_blank" rel="noopener">Ditjen Sumber Daya Air, Kementerian PU</a></p></article>
+<article class="data"><div class="angka">94<small>titik</small></div><p>Kerusakan jalan dan jembatan akibat gempa Flores: 75 longsor, 3 amblas, serta 16 jembatan dan gorong-gorong.</p><p class="asal">Data 20 Agustus 2026.<br>Sumber: <a href="https://infopublik.id/kategori/bencana/985621/kementerian-pu-tangani-94-titik-infrastruktur-terdampak-gempa-flores" target="_blank" rel="noopener">InfoPublik</a></p></article>
+<article class="data"><div class="angka">65,45<small>%</small></div><p>Sampah yang belum terkelola, dari sekitar 24,8 juta ton sampah per tahun.</p><p class="asal">Data SIPSN 2025.<br>Sumber: <a href="https://www.belantara.or.id/berita-terkait/belantara-foundation/618/perlu-strategi-terpadu-atasi-65-persen-sampah-nasional-yang-belum-terkelola" target="_blank" rel="noopener">Belantara Foundation (memuat ulang Kompas)</a></p></article>
+</div>
+<p class="peringatan">Setiap angka berasal dari wilayah, tahun, dan ukuran yang berbeda. Angka-angka ini tidak boleh dijumlahkan atau dibaca sebagai total kerusakan nasional.</p>
+</div>
+</section>
+<section class="bagian " id="solusi">
+<div class="wrap">
+<div class="kepala"><h2>Solusi yang ditawarkan</h2><p>Satu tempat untuk melapor, memeriksa, dan memantau.</p></div>
+<div class="grid g3">
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM9 11h7M9 15h7"/></svg></span><h3>Pelaporan digital</h3><p>Masyarakat membuat laporan secara online melalui satu sistem.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h4l2-3h4l2 3h4v11H4z"/><circle cx="12" cy="13" r="3.500"/></svg></span><h3>Bukti foto</h3><p>Foto dari kamera atau galeri memperjelas kondisi masalah.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11a7 7 0 0 0-14 0c0 4.800 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg></span><h3>Lokasi GPS</h3><p>Titik lokasi membantu petugas menemukan masalah.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.300M20 12a8 8 0 0 1-14 5.300M18 2v5h-5M6 22v-5h5"/></svg></span><h3>Pelacakan status</h3><p>Pelapor memantau perkembangan laporannya.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></span><h3>Dashboard admin</h3><p>Admin menerima, memeriksa, dan mengelola laporan masuk.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><h3>Pengelolaan status</h3><p>Status diperbarui sampai masalah selesai atau ditolak dengan alasan.</p></article>
+</div>
+<div class="grid g2 sub">
+<div class="kartu isi-mint"><h3>Tujuan</h3><ol class="daftar"><li>Mempermudah masyarakat melaporkan masalah lingkungan dan fasilitas umum.</li><li>Membantu pihak terkait mengelola laporan secara terstruktur.</li><li>Mempermudah identifikasi lokasi masalah.</li><li>Memberikan transparansi tentang perkembangan laporan.</li><li>Mendorong partisipasi masyarakat menjaga lingkungan dan fasilitas umum.</li></ol></div>
+<div class="kartu isi-mint"><h3>Visi</h3><p>Mewujudkan sistem pelaporan masyarakat yang mudah diakses, transparan, dan terstruktur untuk membantu menciptakan lingkungan serta fasilitas umum yang lebih baik.</p></div>
+</div>
+</div>
+</section>
+<section class="bagian mint" id="alur">
+<div class="wrap">
+<div class="kepala"><h2>Cara kerja TUNTAS</h2><p>Lima tahap dari laporan dibuat sampai masalah selesai.</p></div>
+<ol class="alur"><li><h3>Masyarakat melapor</h3><p>Mengisi judul, deskripsi, kategori, foto, dan lokasi.</p></li><li><h3>Sistem menyimpan</h3><p>Data laporan, foto, kategori, dan lokasi tercatat.</p></li><li><h3>Admin memverifikasi</h3><p>Laporan diterima, atau ditolak disertai alasan.</p></li><li><h3>Petugas menindaklanjuti</h3><p>Masalah yang sudah diverifikasi ditangani.</p></li><li><h3>Penyelesaian</h3><p>Status menjadi selesai dan warga melihat hasilnya.</p></li></ol>
+<h3 class="sub">Alur status laporan</h3>
+<ol class="rantai">
+<li><span class="status s-menunggu">Menunggu Verifikasi</span></li><li><span class="status s-verif">Diverifikasi</span></li><li><span class="status s-proses">Sedang Diproses</span></li><li><span class="status s-selesai">Selesai</span></li>
+</ol>
+<p class="sub">Jika tidak lolos pemeriksaan, status berubah dari <span class="status s-menunggu">Menunggu Verifikasi</span> menjadi <span class="status s-tolak">Ditolak</span> beserta alasannya.</p>
+</div>
+</section>
+<section class="bagian " id="fitur">
+<div class="wrap">
+<div class="kepala"><h2>Fitur yang direncanakan</h2><p>Sembilan fitur utama (MVP) dikerjakan lebih dulu, lalu fitur pengembangan.</p></div>
+<div data-tabs>
+<div class="tablist" role="tablist" aria-label="Kelompok fitur" hidden>
+<button class="tab" type="button" role="tab" id="tab-fitur-0" aria-controls="panel-fitur-0">Masyarakat (MVP)</button>
+<button class="tab" type="button" role="tab" id="tab-fitur-1" aria-controls="panel-fitur-1">Admin dan petugas (MVP)</button>
+<button class="tab" type="button" role="tab" id="tab-fitur-2" aria-controls="panel-fitur-2">Rencana pengembangan</button>
+</div>
+<div class="panel" role="tabpanel" id="panel-fitur-0" aria-labelledby="tab-fitur-0">
+<h3 class="judul-panel">Masyarakat (MVP)</h3>
+<div class="grid g3"><article class="kartu"><span class="label mvp">MVP</span><h4>1. Registrasi dan login</h4><p>Membuat akun dan masuk ke aplikasi.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>2. Buat laporan</h4><p>Mengisi judul, deskripsi, kategori, foto, dan lokasi.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>3. Upload foto bukti</h4><p>Melampirkan foto kondisi masalah.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>4. Deteksi lokasi (GPS)</h4><p>Membantu menentukan lokasi masalah.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>5. Riwayat laporan</h4><p>Melihat semua laporan yang pernah dibuat.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>6. Pantau status</h4><p>Mengetahui perkembangan laporan.</p></article></div>
+</div>
+<div class="panel" role="tabpanel" id="panel-fitur-1" aria-labelledby="tab-fitur-1">
+<h3 class="judul-panel">Admin dan petugas (MVP)</h3>
+<div class="grid g3"><article class="kartu"><span class="label mvp">MVP</span><h4>7. Dashboard admin</h4><p>Laporan masuk dan ringkasan pengelolaan.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>8. Verifikasi laporan</h4><p>Memeriksa, menerima, atau menolak dengan alasan.</p></article><article class="kartu"><span class="label mvp">MVP</span><h4>9. Update status</h4><p>Memperbarui status sampai masalah selesai.</p></article></div>
+</div>
+<div class="panel" role="tabpanel" id="panel-fitur-2" aria-labelledby="tab-fitur-2">
+<h3 class="judul-panel">Rencana pengembangan</h3>
+<div class="grid g3"><article class="kartu"><span class="label lanjut">Pengembangan</span><h4>10. Notifikasi</h4><p>Pemberitahuan saat status laporan berubah.</p></article><article class="kartu"><span class="label lanjut">Pengembangan</span><h4>11. Penugasan petugas</h4><p>Admin menunjuk petugas untuk laporan tertentu.</p></article><article class="kartu"><span class="label lanjut">Pengembangan</span><h4>12. Peta persebaran masalah</h4><p>Titik laporan ditampilkan di peta, sehingga pengelola dan pengguna lain bisa melihat lokasi yang bermasalah beserta fotonya.</p></article><article class="kartu"><span class="label lanjut">Pengembangan</span><h4>13. Statistik laporan</h4><p>Jumlah laporan, kategori, dan tingkat penyelesaian.</p></article><article class="kartu"><span class="label lanjut">Pengembangan</span><h4>14. Multi-organisasi</h4><p>Mendukung banyak organisasi seperti RT/RW, sekolah, dan perumahan.</p></article><article class="kartu"><span class="label lanjut">Pengembangan</span><h4>15. Manajemen anggota</h4><p>Mengatur anggota organisasi dan hak aksesnya.</p></article></div>
+</div>
+</div>
+<h3 class="sub">Prioritas pengembangan</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Tahap</th><th scope="col">Fokus pengerjaan</th></tr></thead>
+<tbody>
+<tr><td>Tahap 1</td><td>Registrasi dan login</td></tr>
+<tr><td>Tahap 2</td><td>Membuat laporan, upload foto, dan GPS</td></tr>
+<tr><td>Tahap 3</td><td>Riwayat dan pelacakan status</td></tr>
+<tr><td>Tahap 4</td><td>Dashboard admin</td></tr>
+<tr><td>Tahap 5</td><td>Verifikasi dan penyelesaian laporan</td></tr>
+<tr><td>Tahap 6</td><td>Notifikasi, peta, dan statistik</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="bagian " id="pengguna">
+<div class="wrap">
+<div class="kepala"><h2>Untuk siapa TUNTAS?</h2><p>Bukan hanya untuk pemerintah. TUNTAS dirancang agar bisa dipakai berbagai organisasi dan pengelola lingkungan.</p></div>
+<div class="grid g4">
+<article class="kartu isi-mint"><h3>Pemerintah daerah</h3><p>Jalan rusak, sampah, drainase, dan fasilitas umum.</p></article>
+<article class="kartu isi-mint"><h3>RT/RW</h3><p>Kebersihan, keamanan, dan fasilitas bersama.</p></article>
+<article class="kartu isi-mint"><h3>Perumahan</h3><p>Jalan, lampu, saluran air, dan fasilitas bersama.</p></article>
+<article class="kartu isi-mint"><h3>Sekolah</h3><p>Ruang kelas, toilet, meja, kursi, dan fasilitas sekolah.</p></article>
+<article class="kartu isi-mint"><h3>Kampus</h3><p>Fasilitas kampus dan lingkungan sekitar.</p></article>
+<article class="kartu isi-mint"><h3>Perusahaan</h3><p>Fasilitas kantor dan lingkungan kerja.</p></article>
+<article class="kartu isi-mint"><h3>Pengelola gedung</h3><p>Lift, AC, listrik, toilet, dan fasilitas gedung.</p></article>
+<article class="kartu isi-mint"><h3>Komunitas</h3><p>Masalah lingkungan di wilayah komunitas.</p></article>
+</div>
+<div class="sub"><p>Setiap organisasi memiliki profil, wilayah pengelolaan, admin, anggota, manajemen laporan, dan statistik sendiri. Data antarorganisasi dipisahkan, sehingga tiap organisasi hanya mengelola laporan sesuai kewenangannya. Dukungan multi-organisasi dikerjakan pada tahap pengembangan.</p></div>
+<div data-tabs>
+<div class="tablist" role="tablist" aria-label="Contoh penerapan" hidden>
+<button class="tab" type="button" role="tab" id="tab-contoh-0" aria-controls="panel-contoh-0">Contoh RT/RW</button>
+<button class="tab" type="button" role="tab" id="tab-contoh-1" aria-controls="panel-contoh-1">Contoh perumahan</button>
+<button class="tab" type="button" role="tab" id="tab-contoh-2" aria-controls="panel-contoh-2">Contoh pemerintah daerah</button>
+</div>
+<div class="panel" role="tabpanel" id="panel-contoh-0" aria-labelledby="tab-contoh-0">
+<h3 class="judul-panel">Contoh RT/RW</h3>
+<ol class="daftar"><li>Warga membuka TUNTAS dan memilih RT/RW tempat tinggalnya.</li><li>Warga melaporkan saluran air tersumbat beserta foto dan lokasi.</li><li>Ketua RT atau admin menerima laporan.</li><li>Petugas lingkungan melakukan penanganan.</li><li>Status diperbarui menjadi selesai.</li></ol>
+</div>
+<div class="panel" role="tabpanel" id="panel-contoh-1" aria-labelledby="tab-contoh-1">
+<h3 class="judul-panel">Contoh perumahan</h3>
+<ol class="daftar"><li>Penghuni membuka TUNTAS dan memilih pengelola perumahan.</li><li>Penghuni melaporkan lampu jalan yang mati.</li><li>Admin perumahan menerima laporan.</li><li>Teknisi melakukan perbaikan.</li><li>Penghuni melihat status penyelesaian.</li></ol>
+</div>
+<div class="panel" role="tabpanel" id="panel-contoh-2" aria-labelledby="tab-contoh-2">
+<h3 class="judul-panel">Contoh pemerintah daerah</h3>
+<ol class="daftar"><li>Warga memilih instansi atau saluran pelaporan yang sesuai.</li><li>Warga mengirim laporan jalan rusak beserta foto dan titik lokasi.</li><li>Admin instansi memverifikasi laporan.</li><li>Petugas terkait melakukan tindak lanjut.</li><li>Warga memantau perkembangan laporan.</li></ol>
+</div>
+</div>
+<h3 class="sub">Peran pengguna</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Peran</th><th scope="col">Hak akses</th></tr></thead>
+<tbody>
+<tr><td>Super Admin</td><td>Mengelola seluruh platform dan organisasi.</td></tr>
+<tr><td>Admin Organisasi</td><td>Mengelola profil, anggota, dan laporan organisasinya.</td></tr>
+<tr><td>Petugas</td><td>Melihat dan menangani laporan yang ditugaskan.</td></tr>
+<tr><td>Pelapor</td><td>Membuat laporan dan memantau perkembangannya.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="bagian gelap penutup">
+<div class="wrap">
+<h2>Satu platform, berbagai organisasi, satu tujuan: menyelesaikan permasalahan bersama.</h2>
+<div class="baris-tombol"><a class="tombol" href="wireframe.html">Lihat wireframe</a><a class="tombol garis" href="perancangan.html">Lihat perancangan sistem</a></div>
+</div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>TUNTAS</strong>. Satu platform untuk berbagai organisasi.</p>
+      <p>Website presentasi konsep. Aplikasi TUNTAS masih dalam tahap rencana.</p>
+    </div>
+  </footer>
+  <script src="app.js/script.js"></script>
+</body>
+</html>

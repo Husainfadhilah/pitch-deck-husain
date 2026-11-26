@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="id" class="tanpa-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <title>Perancangan TUNTAS</title>
+  <meta name="description" content="User flow, flowchart, ERD, dan UI/UX TUNTAS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lompat" href="#isi">Langsung ke isi</a>
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0B3D2E"/><path d="M16 5.5c-4.7 0-8 3.4-8 7.8 0 5.3 5.6 10.3 8 13.2 2.4-2.9 8-7.9 8-13.2 0-4.4-3.3-7.8-8-7.8z" fill="#A3E635"/><path d="M12 13.4l2.9 2.9 5.2-5.4" fill="none" stroke="#0B3D2E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> TUNTAS</a>
+      <button class="tombol garis tombol-menu" type="button" aria-expanded="false" aria-controls="navigasi">Menu</button>
+      <nav class="navigasi" id="navigasi" aria-label="Menu utama">
+        <ul class="menu">
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="index.html#data">Data</a></li>
+          <li><a href="index.html#alur">Cara kerja</a></li>
+          <li><a href="index.html#fitur">Fitur</a></li>
+          <li><a href="index.html#pengguna">Pengguna</a></li>
+          <li><a href="wireframe.html">Wireframe</a></li>
+          <li><a href="perancangan.html" aria-current="page">Perancangan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="isi">
+<section class="judul-halaman"><div class="wrap">
+<h1>Perancangan sistem</h1>
+<p>Gambaran sistem, user flow, flowchart, ERD, dan rancangan UI/UX aplikasi TUNTAS.</p>
+<div class="baris-tombol"><a class="tombol garis" href="#sistem">Gambaran sistem</a><a class="tombol garis" href="#userflow">User flow</a><a class="tombol garis" href="#flowchart">Flowchart</a><a class="tombol garis" href="#erd">ERD</a><a class="tombol garis" href="#uiux">UI/UX</a></div>
+</div></section>
+<section class="bagian " id="sistem">
+<div class="wrap">
+<div class="kepala"><h2>Gambaran sistem</h2><p>Tiga bagian yang saling terhubung.</p></div>
+<div class="grid g3">
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM9 11h7M9 15h7"/></svg></span><h3>Aplikasi pelapor</h3><p>Membuat laporan, mengunggah foto, mengirim lokasi, dan memantau status.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.300M20 12a8 8 0 0 1-14 5.300M18 2v5h-5M6 22v-5h5"/></svg></span><h3>Sistem TUNTAS</h3><p>Menyimpan laporan, foto, kategori, lokasi, dan riwayat status per organisasi.</p></article>
+<article class="kartu"><span class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></span><h3>Panel admin dan petugas</h3><p>Memverifikasi, menugaskan, menangani, dan memperbarui status.</p></article>
+</div>
+</div>
+</section>
+<section class="bagian mint" id="userflow">
+<div class="wrap">
+<div class="kepala"><h2>User flow</h2><p>Langkah utama setiap pengguna.</p></div>
+<div data-tabs>
+<div class="tablist" role="tablist" aria-label="User flow per pengguna" hidden>
+<button class="tab" type="button" role="tab" id="tab-uf-0" aria-controls="panel-uf-0">Pelapor</button>
+<button class="tab" type="button" role="tab" id="tab-uf-1" aria-controls="panel-uf-1">Admin organisasi</button>
+<button class="tab" type="button" role="tab" id="tab-uf-2" aria-controls="panel-uf-2">Petugas</button>
+</div>
+<div class="panel" role="tabpanel" id="panel-uf-0" aria-labelledby="tab-uf-0">
+<h3 class="judul-panel">Pelapor</h3>
+<ol class="alur"><li><h4>Masuk</h4><p>Daftar atau login.</p></li><li><h4>Buat laporan</h4><p>Pilih organisasi dan kategori.</p></li><li><h4>Lampirkan bukti</h4><p>Foto, lokasi GPS, dan deskripsi.</p></li><li><h4>Kirim</h4><p>Status Menunggu Verifikasi.</p></li><li><h4>Pantau</h4><p>Buka riwayat dan detail sampai selesai atau ditolak.</p></li></ol>
+</div>
+<div class="panel" role="tabpanel" id="panel-uf-1" aria-labelledby="tab-uf-1">
+<h3 class="judul-panel">Admin organisasi</h3>
+<ol class="alur"><li><h4>Masuk</h4><p>Login sebagai admin.</p></li><li><h4>Cek dashboard</h4><p>Lihat laporan masuk.</p></li><li><h4>Periksa laporan</h4><p>Foto, lokasi, dan deskripsi.</p></li><li><h4>Putuskan</h4><p>Terima, atau tolak dengan alasan.</p></li><li><h4>Tindak lanjut</h4><p>Perbarui status. Penugasan petugas ada di tahap pengembangan.</p></li></ol>
+</div>
+<div class="panel" role="tabpanel" id="panel-uf-2" aria-labelledby="tab-uf-2">
+<h3 class="judul-panel">Petugas</h3>
+<ol class="alur"><li><h4>Masuk</h4><p>Login sebagai petugas.</p></li><li><h4>Lihat tugas</h4><p>Buka daftar yang ditugaskan.</p></li><li><h4>Datangi lokasi</h4><p>Cek rincian dan titik GPS.</p></li><li><h4>Tangani</h4><p>Status Sedang Diproses.</p></li><li><h4>Laporkan hasil</h4><p>Unggah foto bukti dan tandai selesai.</p></li></ol>
+</div>
+</div>
+</div>
+</section>
+<section class="bagian " id="flowchart">
+<div class="wrap">
+<div class="kepala"><h2>Flowchart pelaporan</h2><p>Alur satu laporan, termasuk keputusan saat verifikasi. Disusun dari alur kerja dan alur status TUNTAS.</p></div>
+<div data-diagram>
+<div class="alat-diagram" hidden><button class="tab" type="button" data-kecil>Perkecil</button><button class="tab" type="button" data-besar>Perbesar</button><button class="tab" type="button" data-pas>Sesuaikan lebar</button><output aria-live="polite"></output></div>
+<div class="gulir diagram" tabindex="0"><img src="flowchart.svg" width="592" height="2297" alt="Flowchart: pengguna login, mengisi laporan, sistem menyimpan, admin memverifikasi, laporan ditolak atau diproses sampai selesai."></div>
+</div>
+</div>
+</section>
+<section class="bagian " id="erd">
+<div class="wrap">
+<div class="kepala"><h2>ERD (Entity Relationship Diagram)</h2><p>Dua belas entitas dengan konsep multi-organisasi. PK adalah kunci utama, FK kunci asing, UK nilai unik.</p></div>
+<div data-diagram>
+<div class="alat-diagram" hidden><button class="tab" type="button" data-kecil>Perkecil</button><button class="tab" type="button" data-besar>Perbesar</button><button class="tab" type="button" data-pas>Sesuaikan lebar</button><output aria-live="polite"></output></div>
+<div class="gulir diagram" tabindex="0"><img src="erd.svg" width="2072" height="1824" alt="ERD TUNTAS berisi 12 entitas. Rincian atribut dan hubungan tersedia dalam tabel di bawah."></div>
+</div>
+<h3 class="sub">Atribut setiap entitas</h3>
+<div data-tabs>
+<div class="tablist" role="tablist" aria-label="Entitas" hidden>
+<button class="tab" type="button" role="tab" id="tab-kamus-0" aria-controls="panel-kamus-0">users</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-1" aria-controls="panel-kamus-1">organizations</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-2" aria-controls="panel-kamus-2">roles</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-3" aria-controls="panel-kamus-3">organization_members</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-4" aria-controls="panel-kamus-4">categories</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-5" aria-controls="panel-kamus-5">reports</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-6" aria-controls="panel-kamus-6">report_locations</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-7" aria-controls="panel-kamus-7">report_photos</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-8" aria-controls="panel-kamus-8">assignments</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-9" aria-controls="panel-kamus-9">report_status_histories</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-10" aria-controls="panel-kamus-10">report_comments</button>
+<button class="tab" type="button" role="tab" id="tab-kamus-11" aria-controls="panel-kamus-11">notifications</button>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-0" aria-labelledby="tab-kamus-0">
+<h3 class="judul-panel">users</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>name</td><td>VARCHAR</td><td></td></tr>
+<tr><td>email</td><td>VARCHAR</td><td>UK</td></tr>
+<tr><td>phone</td><td>VARCHAR</td><td></td></tr>
+<tr><td>password_hash</td><td>VARCHAR</td><td></td></tr>
+<tr><td>is_super_admin</td><td>BOOLEAN</td><td></td></tr>
+<tr><td>created_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-1" aria-labelledby="tab-kamus-1">
+<h3 class="judul-panel">organizations</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>name</td><td>VARCHAR</td><td></td></tr>
+<tr><td>type</td><td>VARCHAR</td><td></td></tr>
+<tr><td>logo_url</td><td>VARCHAR</td><td></td></tr>
+<tr><td>description</td><td>TEXT</td><td></td></tr>
+<tr><td>coverage_area</td><td>TEXT</td><td></td></tr>
+<tr><td>created_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-2" aria-labelledby="tab-kamus-2">
+<h3 class="judul-panel">roles</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>name</td><td>VARCHAR</td><td>UK</td></tr>
+<tr><td>description</td><td>VARCHAR</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-3" aria-labelledby="tab-kamus-3">
+<h3 class="judul-panel">organization_members</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>organization_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>user_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>role_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>is_active</td><td>BOOLEAN</td><td></td></tr>
+<tr><td>joined_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-4" aria-labelledby="tab-kamus-4">
+<h3 class="judul-panel">categories</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>organization_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>name</td><td>VARCHAR</td><td></td></tr>
+<tr><td>description</td><td>VARCHAR</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-5" aria-labelledby="tab-kamus-5">
+<h3 class="judul-panel">reports</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>organization_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>reporter_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>category_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>title</td><td>VARCHAR</td><td></td></tr>
+<tr><td>description</td><td>TEXT</td><td></td></tr>
+<tr><td>status</td><td>VARCHAR</td><td></td></tr>
+<tr><td>created_at</td><td>DATETIME</td><td></td></tr>
+<tr><td>updated_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-6" aria-labelledby="tab-kamus-6">
+<h3 class="judul-panel">report_locations</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>report_id</td><td>BIGINT</td><td>FK, UK</td></tr>
+<tr><td>latitude</td><td>DECIMAL</td><td></td></tr>
+<tr><td>longitude</td><td>DECIMAL</td><td></td></tr>
+<tr><td>address</td><td>VARCHAR</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-7" aria-labelledby="tab-kamus-7">
+<h3 class="judul-panel">report_photos</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>report_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>uploaded_by</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>photo_url</td><td>VARCHAR</td><td></td></tr>
+<tr><td>photo_type</td><td>VARCHAR</td><td></td></tr>
+<tr><td>uploaded_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-8" aria-labelledby="tab-kamus-8">
+<h3 class="judul-panel">assignments</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>report_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>officer_member_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>assigned_by_member_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>note</td><td>TEXT</td><td></td></tr>
+<tr><td>assigned_at</td><td>DATETIME</td><td></td></tr>
+<tr><td>completed_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-9" aria-labelledby="tab-kamus-9">
+<h3 class="judul-panel">report_status_histories</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>report_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>changed_by</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>old_status</td><td>VARCHAR</td><td></td></tr>
+<tr><td>new_status</td><td>VARCHAR</td><td></td></tr>
+<tr><td>note</td><td>TEXT</td><td></td></tr>
+<tr><td>changed_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-10" aria-labelledby="tab-kamus-10">
+<h3 class="judul-panel">report_comments</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>report_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>user_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>body</td><td>TEXT</td><td></td></tr>
+<tr><td>created_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="panel" role="tabpanel" id="panel-kamus-11" aria-labelledby="tab-kamus-11">
+<h3 class="judul-panel">notifications</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Atribut</th><th scope="col">Tipe data</th><th scope="col">Kunci</th></tr></thead>
+<tbody>
+<tr><td>id</td><td>BIGINT</td><td>PK</td></tr>
+<tr><td>user_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>report_id</td><td>BIGINT</td><td>FK</td></tr>
+<tr><td>message</td><td>VARCHAR</td><td></td></tr>
+<tr><td>is_read</td><td>BOOLEAN</td><td></td></tr>
+<tr><td>created_at</td><td>DATETIME</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 class="sub">Hubungan antarentitas</h3>
+<div class="gulir" tabindex="0">
+<table>
+<thead><tr><th scope="col">Hubungan</th><th scope="col">Kardinalitas</th><th scope="col">Kunci asing</th><th scope="col">Aturan</th></tr></thead>
+<tbody>
+<tr><td>users ke organization_members</td><td>1 ke banyak</td><td>user_id</td><td>Satu pengguna dapat tergabung dalam banyak organisasi.</td></tr>
+<tr><td>organizations ke organization_members</td><td>1 ke banyak</td><td>organization_id</td><td>Satu organisasi memiliki banyak anggota.</td></tr>
+<tr><td>roles ke organization_members</td><td>1 ke banyak</td><td>role_id</td><td>Satu peran dipakai banyak keanggotaan.</td></tr>
+<tr><td>organizations ke categories</td><td>1 ke banyak</td><td>organization_id</td><td>Setiap organisasi punya daftar kategori sendiri.</td></tr>
+<tr><td>organizations ke reports</td><td>1 ke banyak</td><td>organization_id</td><td>Satu organisasi memiliki banyak laporan.</td></tr>
+<tr><td>users ke reports</td><td>1 ke banyak</td><td>reporter_id</td><td>Setiap laporan dibuat satu pelapor.</td></tr>
+<tr><td>categories ke reports</td><td>1 ke banyak</td><td>category_id</td><td>Setiap laporan memiliki satu kategori.</td></tr>
+<tr><td>reports ke report_locations</td><td>1 ke 1</td><td>report_id</td><td>Setiap laporan memiliki satu lokasi.</td></tr>
+<tr><td>reports ke report_photos</td><td>1 ke banyak</td><td>report_id</td><td>Satu laporan dapat memiliki beberapa foto.</td></tr>
+<tr><td>users ke report_photos</td><td>1 ke banyak</td><td>uploaded_by</td><td>Mencatat pengunggah foto.</td></tr>
+<tr><td>reports ke assignments</td><td>1 ke banyak</td><td>report_id</td><td>Laporan dapat ditugaskan kepada petugas.</td></tr>
+<tr><td>organization_members ke assignments</td><td>1 ke banyak</td><td>officer_member_id</td><td>Petugas adalah anggota organisasi.</td></tr>
+<tr><td>organization_members ke assignments</td><td>1 ke banyak</td><td>assigned_by_member_id</td><td>Mencatat admin yang memberi tugas.</td></tr>
+<tr><td>reports ke report_status_histories</td><td>1 ke banyak</td><td>report_id</td><td>Setiap perubahan status masuk riwayat.</td></tr>
+<tr><td>users ke report_status_histories</td><td>1 ke banyak</td><td>changed_by</td><td>Mencatat siapa yang mengubah status.</td></tr>
+<tr><td>reports ke report_comments</td><td>1 ke banyak</td><td>report_id</td><td>Satu laporan dapat memiliki banyak komentar.</td></tr>
+<tr><td>users ke report_comments</td><td>1 ke banyak</td><td>user_id</td><td>Setiap komentar ditulis satu pengguna.</td></tr>
+<tr><td>users ke notifications</td><td>1 ke banyak</td><td>user_id</td><td>Satu pengguna menerima banyak notifikasi.</td></tr>
+<tr><td>reports ke notifications</td><td>0 atau 1 ke banyak</td><td>report_id</td><td>Notifikasi dapat terkait satu laporan.</td></tr>
+</tbody>
+</table>
+</div>
+<h3 class="sub">Aturan data</h3>
+<ol class="daftar"><li>Setiap laporan menyimpan <strong>organization_id</strong>, dan semua pencarian data disaring dengan kolom ini agar data antarorganisasi terpisah.</li><li>Kategori sebuah laporan harus milik organisasi yang sama dengan laporannya.</li><li>Petugas dan admin pada penugasan harus anggota organisasi pemilik laporan.</li><li>Setiap perubahan status menambah satu baris di report_status_histories.</li><li>Alasan penolakan wajib diisi di kolom note pada riwayat status.</li><li>Satu pengguna bisa punya peran berbeda di organisasi berbeda. Super Admin ditandai dengan is_super_admin.</li></ol>
+</div>
+</section>
+<section class="bagian mint" id="uiux">
+<div class="wrap">
+<div class="kepala"><h2>Rancangan UI/UX</h2><p>Warna hijau dipilih karena sesuai dengan tema lingkungan.</p></div>
+<div class="grid g3"><div class="kartu"><div class="contoh-warna" style="background:#0B3D2E"></div><h4>Hijau hutan</h4><p>#0B3D2E<br>Header, footer, judul</p></div><div class="kartu"><div class="contoh-warna" style="background:#15803D"></div><h4>Hijau daun</h4><p>#15803D<br>Tombol dan tautan</p></div><div class="kartu"><div class="contoh-warna" style="background:#22C55E"></div><h4>Hijau segar</h4><p>#22C55E<br>Ikon, garis alur, penanda</p></div><div class="kartu"><div class="contoh-warna" style="background:#A3E635"></div><h4>Hijau limau</h4><p>#A3E635<br>Sorotan di latar gelap</p></div><div class="kartu"><div class="contoh-warna" style="background:#D1FAE5"></div><h4>Hijau mint</h4><p>#D1FAE5<br>Latar kartu</p></div><div class="kartu"><div class="contoh-warna" style="background:#FFFFFF"></div><h4>Putih</h4><p>#FFFFFF<br>Latar halaman</p></div></div><div class="grid g2 sub">
+<div class="kartu"><h3>Huruf</h3><p>Plus Jakarta Sans.</p><h2>Judul halaman, tebal 800</h2><h3>Judul kartu, tebal 700</h3><p>Teks isi, tebal 400, ukuran dasar 16 px agar nyaman dibaca di HP.</p></div>
+<div class="kartu"><h3>Tombol dan isian</h3><div class="baris-tombol"><span class="tombol">Tombol utama</span><span class="tombol garis">Tombol kedua</span></div><div class="w-input">Contoh kolom isian</div><p>Tinggi area sentuh minimal 44 px.</p></div>
+<div class="kartu"><h3>Warna status</h3><div class="baris-tombol"><span class="status s-menunggu">Menunggu Verifikasi</span><span class="status s-verif">Diverifikasi</span><span class="status s-proses">Sedang Diproses</span><span class="status s-selesai">Selesai</span><span class="status s-tolak">Ditolak</span></div><p>Status selalu ditulis dengan teks, tidak hanya dibedakan dari warna. Kuning dan merah dipakai agar menunggu dan ditolak mudah dikenali.</p></div>
+<div class="kartu"><h3>Prinsip UI/UX</h3><ol class="daftar"><li>Melapor cukup dalam satu formulir yang runtut.</li><li>Status laporan terlihat di setiap daftar.</li><li>Navigasi pelapor berada di bawah layar agar mudah dijangkau.</li><li>Pesan kesalahan menjelaskan apa yang perlu diperbaiki.</li></ol></div>
+</div>
+</div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>TUNTAS</strong>. Satu platform untuk berbagai organisasi.</p>
+      <p>Website presentasi konsep. Aplikasi TUNTAS masih dalam tahap rencana.</p>
+    </div>
+  </footer>
+  <script src="app.js/script.js"></script>
+</body>
+</html>

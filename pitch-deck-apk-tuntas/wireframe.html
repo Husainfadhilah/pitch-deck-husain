@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="id" class="tanpa-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <title>Wireframe TUNTAS</title>
+  <meta name="description" content="Wireframe halaman pelapor, admin, dan petugas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lompat" href="#isi">Langsung ke isi</a>
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0B3D2E"/><path d="M16 5.5c-4.7 0-8 3.4-8 7.8 0 5.3 5.6 10.3 8 13.2 2.4-2.9 8-7.9 8-13.2 0-4.4-3.3-7.8-8-7.8z" fill="#A3E635"/><path d="M12 13.4l2.9 2.9 5.2-5.4" fill="none" stroke="#0B3D2E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> TUNTAS</a>
+      <button class="tombol garis tombol-menu" type="button" aria-expanded="false" aria-controls="navigasi">Menu</button>
+      <nav class="navigasi" id="navigasi" aria-label="Menu utama">
+        <ul class="menu">
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="index.html#data">Data</a></li>
+          <li><a href="index.html#alur">Cara kerja</a></li>
+          <li><a href="index.html#fitur">Fitur</a></li>
+          <li><a href="index.html#pengguna">Pengguna</a></li>
+          <li><a href="wireframe.html" aria-current="page">Wireframe</a></li>
+          <li><a href="perancangan.html">Perancangan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="isi">
+<section class="judul-halaman"><div class="wrap">
+<h1>Wireframe aplikasi</h1>
+<p>Rancangan susunan 17 halaman TUNTAS. Nomor pada gambar sama dengan nomor penjelasan komponennya. Teks dalam kurung siku adalah tempat data.</p>
+<div class="baris-tombol"><span class="label mvp">MVP</span><span class="label lanjut">Pengembangan</span><span class="label">Pelengkap</span></div>
+<p>Pelengkap berarti halaman pendukung yang tidak tercantum di tabel fitur.</p>
+</div></section>
+<section class="bagian"><div class="wrap">
+<div data-tabs>
+<div class="tablist" role="tablist" aria-label="Jenis pengguna" hidden>
+<button class="tab" type="button" role="tab" id="tab-wf-0" aria-controls="panel-wf-0">Pelapor (6 halaman)</button>
+<button class="tab" type="button" role="tab" id="tab-wf-1" aria-controls="panel-wf-1">Admin organisasi (7 halaman)</button>
+<button class="tab" type="button" role="tab" id="tab-wf-2" aria-controls="panel-wf-2">Petugas (4 halaman)</button>
+</div>
+<div class="panel" role="tabpanel" id="panel-wf-0" aria-labelledby="tab-wf-0">
+<h3 class="judul-panel">Pelapor (6 halaman)</h3>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Login dan registrasi"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>TUNTAS</span><span>Masuk</span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-input">Email</div><div class="w-input">Kata sandi</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-btn">Masuk</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-btn dua">Daftar akun</div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Login dan registrasi</h3>
+<dl><dt>Tujuan</dt><dd>Masuk ke akun atau membuat akun baru.</dd><dt>Pengguna</dt><dd>Pelapor (masyarakat atau anggota organisasi).</dd><dt>Cara berinteraksi</dt><dd>Pengguna mengisi email dan kata sandi lalu menekan Masuk. Pengguna baru memilih Daftar akun.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul halaman.</strong> Menunjukkan aplikasi dan halaman yang dibuka.</span></li><li><span class="no">2</span><span><strong>Kolom isian.</strong> Menerima data akun.</span></li><li><span class="no">3</span><span><strong>Tombol Masuk.</strong> Memeriksa data lalu membuka dashboard.</span></li><li><span class="no">4</span><span><strong>Tombol Daftar.</strong> Membuka formulir nama, email, nomor telepon, dan kata sandi.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Dashboard pelapor"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Halo, [Nama]</span><span>Profil</span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-kolom"><div class="w-kotak"><b>[n]</b>Menunggu</div><div class="w-kotak"><b>[n]</b>Diproses</div><div class="w-kotak"><b>[n]</b>Selesai</div></div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-btn">Buat laporan</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-item"><span>[Judul laporan]</span><b>Diproses</b></div><div class="w-item"><span>[Judul laporan]</span><b>Selesai</b></div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-nav"><span>Beranda</span><span>Lapor</span><span>Riwayat</span><span>Profil</span></div></div></div>
+<div class="layar-info">
+<span class="label ">Pelengkap</span>
+<h3>Dashboard pelapor</h3>
+<dl><dt>Tujuan</dt><dd>Memberi ringkasan laporan dan jalan cepat untuk melapor.</dd><dt>Pengguna</dt><dd>Pelapor (masyarakat atau anggota organisasi).</dd><dt>Cara berinteraksi</dt><dd>Setelah masuk, pengguna menekan Buat laporan atau memilih salah satu laporan terbaru.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Sapaan dan profil.</strong> Menunjukkan akun yang sedang dipakai.</span></li><li><span class="no">2</span><span><strong>Kartu ringkasan.</strong> Jumlah laporan pengguna per status.</span></li><li><span class="no">3</span><span><strong>Tombol utama.</strong> Membuka formulir laporan.</span></li><li><span class="no">4</span><span><strong>Laporan terbaru.</strong> Ditekan untuk melihat detail.</span></li><li><span class="no">5</span><span><strong>Navigasi bawah.</strong> Berpindah ke Beranda, Lapor, Riwayat, atau Profil.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Buat laporan"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Buat laporan</span><span>Batal</span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-input">Pilih organisasi</div><div class="w-input">Pilih kategori</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-gambar"><span>Foto bukti</span></div><div class="w-kolom"><div class="w-btn dua">Kamera</div><div class="w-btn dua">Galeri</div></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-input">Lokasi GPS terdeteksi</div><div class="w-btn dua">Perbarui lokasi</div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-input">Judul laporan</div><div class="w-input tinggi">Deskripsi masalah</div></div>
+<div class="wf-bagian"><span class="no">6</span><div class="w-btn">Kirim laporan</div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Buat laporan</h3>
+<dl><dt>Tujuan</dt><dd>Mengirim laporan masalah yang lengkap.</dd><dt>Pengguna</dt><dd>Pelapor (masyarakat atau anggota organisasi).</dd><dt>Cara berinteraksi</dt><dd>Pengguna memilih organisasi, mengambil atau mengunggah foto, memastikan lokasi, mengisi keterangan, lalu menekan Kirim.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul dan tombol batal.</strong> Kembali tanpa mengirim.</span></li><li><span class="no">2</span><span><strong>Pilihan tujuan.</strong> Menentukan penerima dan jenis masalah. Pilihan organisasi dipakai saat multi-organisasi tersedia.</span></li><li><span class="no">3</span><span><strong>Foto bukti.</strong> Mengambil foto atau mengunggah berkas foto.</span></li><li><span class="no">4</span><span><strong>Lokasi.</strong> Mengisi titik dan alamat dari GPS.</span></li><li><span class="no">5</span><span><strong>Keterangan.</strong> Menjelaskan masalah.</span></li><li><span class="no">6</span><span><strong>Tombol Kirim.</strong> Menyimpan laporan dengan status Menunggu Verifikasi.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Detail laporan"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Detail laporan</span><span>Kembali</span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-gambar"><span>Foto laporan</span></div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-item"><span>[Judul laporan]</span><b>Diproses</b></div><div class="w-input tinggi">Kategori, alamat, deskripsi</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-item"><span>Menunggu Verifikasi</span><b>[tgl]</b></div><div class="w-item"><span>Diverifikasi</span><b>[tgl]</b></div><div class="w-item"><span>Sedang Diproses</span><b>[tgl]</b></div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-input">Tulis komentar</div><div class="w-btn dua">Kirim komentar</div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Detail laporan</h3>
+<dl><dt>Tujuan</dt><dd>Melihat isi dan perkembangan satu laporan.</dd><dt>Pengguna</dt><dd>Pelapor (masyarakat atau anggota organisasi).</dd><dt>Cara berinteraksi</dt><dd>Pengguna membuka laporan dari dashboard atau riwayat dan membaca urutan statusnya.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul dan tombol kembali.</strong> Kembali ke daftar.</span></li><li><span class="no">2</span><span><strong>Foto.</strong> Memperlihatkan bukti masalah dan hasil penanganan.</span></li><li><span class="no">3</span><span><strong>Informasi laporan.</strong> Rincian dan status saat ini.</span></li><li><span class="no">4</span><span><strong>Riwayat status.</strong> Urutan perubahan beserta waktu dan catatan.</span></li><li><span class="no">5</span><span><strong>Komentar (pengembangan).</strong> Tanya jawab antara pelapor dan pengelola.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Riwayat laporan"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Riwayat laporan</span><span></span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-input">Cari laporan</div><div class="w-input">Saring status</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-item"><span>[Laporan 1]</span><b>Menunggu</b></div><div class="w-item"><span>[Laporan 2]</span><b>Selesai</b></div><div class="w-item"><span>[Laporan 3]</span><b>Ditolak</b></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-nav"><span>Beranda</span><span>Lapor</span><span>Riwayat</span><span>Profil</span></div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Riwayat laporan</h3>
+<dl><dt>Tujuan</dt><dd>Melihat seluruh laporan yang pernah dibuat.</dd><dt>Pengguna</dt><dd>Pelapor (masyarakat atau anggota organisasi).</dd><dt>Cara berinteraksi</dt><dd>Pengguna mencari atau menyaring laporan, lalu menekan salah satunya.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul.</strong> Nama halaman.</span></li><li><span class="no">2</span><span><strong>Pencarian dan saringan.</strong> Mempercepat menemukan laporan.</span></li><li><span class="no">3</span><span><strong>Daftar laporan.</strong> Judul dan status. Ditekan untuk membuka detail.</span></li><li><span class="no">4</span><span><strong>Navigasi bawah.</strong> Berpindah halaman.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Profil pengguna"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Profil</span><span></span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-input">Nama</div><div class="w-input">Email</div><div class="w-input">Nomor telepon</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-item"><span>Organisasi saya</span><b>[n]</b></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-btn">Simpan perubahan</div><div class="w-btn dua">Keluar</div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-nav"><span>Beranda</span><span>Lapor</span><span>Riwayat</span><span>Profil</span></div></div></div>
+<div class="layar-info">
+<span class="label ">Pelengkap</span>
+<h3>Profil pengguna</h3>
+<dl><dt>Tujuan</dt><dd>Mengelola data akun.</dd><dt>Pengguna</dt><dd>Pelapor (masyarakat atau anggota organisasi).</dd><dt>Cara berinteraksi</dt><dd>Pengguna mengubah data lalu menyimpan, atau keluar dari akun.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul.</strong> Nama halaman.</span></li><li><span class="no">2</span><span><strong>Data akun.</strong> Menampilkan dan mengubah identitas.</span></li><li><span class="no">3</span><span><strong>Daftar organisasi.</strong> Organisasi tempat pengguna tergabung.</span></li><li><span class="no">4</span><span><strong>Tombol aksi.</strong> Menyimpan data atau mengakhiri sesi.</span></li><li><span class="no">5</span><span><strong>Navigasi bawah.</strong> Berpindah halaman.</span></li></ul>
+</div>
+</article>
+</div>
+<div class="panel" role="tabpanel" id="panel-wf-1" aria-labelledby="tab-wf-1">
+<h3 class="judul-panel">Admin organisasi (7 halaman)</h3>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Dashboard admin"><div class="wf-web-atas">TUNTAS Admin: Dashboard admin</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-btn">Dashboard</div><div class="w-input">Laporan</div><div class="w-input">Petugas</div><div class="w-input">Anggota</div><div class="w-input">Statistik</div><div class="w-input">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-kolom"><div class="w-kotak"><b>[n]</b>Masuk</div><div class="w-kotak"><b>[n]</b>Menunggu</div><div class="w-kotak"><b>[n]</b>Diproses</div><div class="w-kotak"><b>[n]</b>Selesai</div></div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-tabel"><div><span>Judul</span><span>Kategori</span><span>Tanggal</span><span>Status</span></div><div><span>[Laporan]</span><span>[Kategori]</span><span>[tgl]</span><span>Menunggu</span></div><div><span>[Laporan]</span><span>[Kategori]</span><span>[tgl]</span><span>Diproses</span></div></div></div></div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Dashboard admin</h3>
+<dl><dt>Tujuan</dt><dd>Memantau laporan masuk dan ringkasan penanganan.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin melihat ringkasan lalu menekan laporan yang perlu diperiksa.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Kartu ringkasan.</strong> Jumlah laporan per status.</span></li><li><span class="no">3</span><span><strong>Tabel laporan terbaru.</strong> Pintasan ke detail laporan.</span></li></ul>
+</div>
+</article>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Manajemen laporan"><div class="wf-web-atas">TUNTAS Admin: Manajemen laporan</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-input">Dashboard</div><div class="w-btn">Laporan</div><div class="w-input">Petugas</div><div class="w-input">Anggota</div><div class="w-input">Statistik</div><div class="w-input">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-kolom"><div class="w-input">Cari</div><div class="w-input">Status</div><div class="w-input">Kategori</div></div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-tabel"><div><span>Judul</span><span>Pelapor</span><span>Status</span><span>Aksi</span></div><div><span>[Laporan]</span><span>[Nama]</span><span>Menunggu</span><span>Periksa</span></div><div><span>[Laporan]</span><span>[Nama]</span><span>Selesai</span><span>Lihat</span></div></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-btn dua">Halaman berikutnya</div></div></div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Manajemen laporan</h3>
+<dl><dt>Tujuan</dt><dd>Mencari dan mengelola semua laporan organisasi.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin menyaring daftar, lalu menekan Periksa pada satu baris.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Pencarian dan saringan.</strong> Menampilkan laporan tertentu.</span></li><li><span class="no">3</span><span><strong>Tabel laporan.</strong> Daftar lengkap beserta tombol aksi.</span></li><li><span class="no">4</span><span><strong>Pindah halaman.</strong> Memuat data selanjutnya.</span></li></ul>
+</div>
+</article>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Detail dan verifikasi"><div class="wf-web-atas">TUNTAS Admin: Detail dan verifikasi</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-input">Dashboard</div><div class="w-btn">Laporan</div><div class="w-input">Petugas</div><div class="w-input">Anggota</div><div class="w-input">Statistik</div><div class="w-input">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-gambar"><span>Foto bukti</span></div><div class="w-input tinggi">Judul, deskripsi, pelapor, lokasi</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-input tinggi">Alasan penolakan atau catatan</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-kolom"><div class="w-btn">Terima</div><div class="w-btn dua">Tolak</div></div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-input">Ubah status</div><div class="w-input">Tugaskan petugas (pengembangan)</div><div class="w-btn">Simpan</div></div></div></div></div>
+<div class="layar-info">
+<span class="label mvp">MVP</span>
+<h3>Detail dan verifikasi</h3>
+<dl><dt>Tujuan</dt><dd>Memeriksa laporan lalu menerima, menolak, atau memperbarui statusnya.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin memeriksa foto dan lokasi. Saat menolak, alasan wajib diisi.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Bukti dan rincian.</strong> Bahan pemeriksaan.</span></li><li><span class="no">3</span><span><strong>Catatan.</strong> Tersimpan di riwayat status.</span></li><li><span class="no">4</span><span><strong>Tombol verifikasi.</strong> Mengubah status menjadi Diverifikasi atau Ditolak.</span></li><li><span class="no">5</span><span><strong>Tindak lanjut.</strong> Memperbarui status. Penugasan tersedia setelah fiturnya dibuat.</span></li></ul>
+</div>
+</article>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Manajemen petugas"><div class="wf-web-atas">TUNTAS Admin: Manajemen petugas</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-input">Dashboard</div><div class="w-input">Laporan</div><div class="w-btn">Petugas</div><div class="w-input">Anggota</div><div class="w-input">Statistik</div><div class="w-input">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-btn">Tambah petugas</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-tabel"><div><span>Nama</span><span>Tugas aktif</span><span>Status</span><span>Aksi</span></div><div><span>[Nama]</span><span>[n]</span><span>Aktif</span><span>Ubah</span></div><div><span>[Nama]</span><span>[n]</span><span>Nonaktif</span><span>Ubah</span></div></div></div></div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Manajemen petugas</h3>
+<dl><dt>Tujuan</dt><dd>Mengelola petugas dan melihat beban tugasnya.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin menambah petugas dari anggota atau membuka daftar tugas seorang petugas.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Tombol tambah.</strong> Memberi peran petugas kepada anggota.</span></li><li><span class="no">3</span><span><strong>Tabel petugas.</strong> Daftar petugas dan jumlah tugasnya.</span></li></ul>
+</div>
+</article>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Manajemen anggota"><div class="wf-web-atas">TUNTAS Admin: Manajemen anggota</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-input">Dashboard</div><div class="w-input">Laporan</div><div class="w-input">Petugas</div><div class="w-btn">Anggota</div><div class="w-input">Statistik</div><div class="w-input">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-input">Email anggota baru</div><div class="w-btn">Undang anggota</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-tabel"><div><span>Nama</span><span>Email</span><span>Peran</span><span>Aksi</span></div><div><span>[Nama]</span><span>[email]</span><span>Pelapor</span><span>Ubah</span></div><div><span>[Nama]</span><span>[email]</span><span>Petugas</span><span>Ubah</span></div></div></div></div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Manajemen anggota</h3>
+<dl><dt>Tujuan</dt><dd>Mengatur anggota organisasi dan hak aksesnya.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin mengundang anggota, mengubah peran, atau menonaktifkan anggota.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Formulir undangan.</strong> Menambahkan anggota.</span></li><li><span class="no">3</span><span><strong>Tabel anggota.</strong> Mengubah peran atau status keanggotaan.</span></li></ul>
+</div>
+</article>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Statistik laporan"><div class="wf-web-atas">TUNTAS Admin: Statistik laporan</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-input">Dashboard</div><div class="w-input">Laporan</div><div class="w-input">Petugas</div><div class="w-input">Anggota</div><div class="w-btn">Statistik</div><div class="w-input">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-input">Rentang waktu</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-kolom"><div class="w-kotak"><b>[n]</b>Total</div><div class="w-kotak"><b>[n]%</b>Selesai</div><div class="w-kotak"><b>[n]%</b>Ditolak</div></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-batang" aria-label="Grafik contoh"><i style="height:45%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:30%"></i><i style="height:70%"></i></div><span>Laporan per kategori (ilustrasi)</span></div></div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Statistik laporan</h3>
+<dl><dt>Tujuan</dt><dd>Melihat jumlah, kategori, dan tingkat penyelesaian laporan.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin memilih rentang waktu dan membandingkan hasilnya.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Saringan waktu.</strong> Menentukan periode data.</span></li><li><span class="no">3</span><span><strong>Angka utama.</strong> Ringkasan kinerja.</span></li><li><span class="no">4</span><span><strong>Grafik kategori.</strong> Menunjukkan kategori yang paling sering dilaporkan.</span></li></ul>
+</div>
+</article>
+<article class="layar lebar">
+<div class="wf-web" role="group" aria-label="Wireframe Pengaturan organisasi"><div class="wf-web-atas">TUNTAS Admin: Pengaturan organisasi</div><div class="wf-web-isi"><div class="wf-samping"><div class="wf-bagian"><span class="no">1</span><div class="w-menu"><div class="w-input">Dashboard</div><div class="w-input">Laporan</div><div class="w-input">Petugas</div><div class="w-input">Anggota</div><div class="w-input">Statistik</div><div class="w-btn">Pengaturan</div></div></div></div><div class="wf-utama"><div class="wf-bagian"><span class="no">2</span><div class="w-gambar"><span>Logo</span></div><div class="w-input">Nama organisasi</div><div class="w-input">Jenis organisasi</div><div class="w-input tinggi">Informasi</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-input tinggi">Wilayah pengelolaan</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-input">Daftar kategori laporan</div><div class="w-btn dua">Tambah kategori</div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-btn">Simpan pengaturan</div></div></div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Pengaturan organisasi</h3>
+<dl><dt>Tujuan</dt><dd>Mengelola profil dan wilayah organisasi.</dd><dt>Pengguna</dt><dd>Admin Organisasi.</dd><dt>Cara berinteraksi</dt><dd>Admin mengubah data lalu menekan Simpan.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Menu samping.</strong> Berpindah antarhalaman admin.</span></li><li><span class="no">2</span><span><strong>Profil organisasi.</strong> Identitas yang dilihat pelapor.</span></li><li><span class="no">3</span><span><strong>Wilayah.</strong> Area yang menjadi tanggung jawab organisasi.</span></li><li><span class="no">4</span><span><strong>Kategori.</strong> Jenis masalah yang diterima.</span></li><li><span class="no">5</span><span><strong>Tombol Simpan.</strong> Menyimpan perubahan.</span></li></ul>
+</div>
+</article>
+</div>
+<div class="panel" role="tabpanel" id="panel-wf-2" aria-labelledby="tab-wf-2">
+<h3 class="judul-panel">Petugas (4 halaman)</h3>
+<p class="peringatan">Pada MVP, status laporan diperbarui oleh admin. Halaman petugas dipakai setelah fitur penugasan petugas dibuat.</p>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Dashboard petugas"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Halo, [Petugas]</span><span></span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-kolom"><div class="w-kotak"><b>[n]</b>Baru</div><div class="w-kotak"><b>[n]</b>Diproses</div><div class="w-kotak"><b>[n]</b>Selesai</div></div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-item"><span>[Tugas terbaru]</span><b>Buka</b></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-nav"><span>Beranda</span><span>Tugas</span><span>Riwayat</span><span>Profil</span></div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Dashboard petugas</h3>
+<dl><dt>Tujuan</dt><dd>Melihat tugas yang perlu dikerjakan.</dd><dt>Pengguna</dt><dd>Petugas.</dd><dt>Cara berinteraksi</dt><dd>Petugas masuk lalu menekan tugas yang paling mendesak.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Sapaan.</strong> Menunjukkan akun petugas.</span></li><li><span class="no">2</span><span><strong>Ringkasan tugas.</strong> Jumlah tugas per keadaan.</span></li><li><span class="no">3</span><span><strong>Tugas terbaru.</strong> Pintasan ke detail.</span></li><li><span class="no">4</span><span><strong>Navigasi bawah.</strong> Berpindah halaman.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Daftar laporan ditugaskan"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Tugas saya</span><span></span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-input">Saring status</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-item"><span>[Laporan 1]</span><b>Baru</b></div><div class="w-item"><span>[Laporan 2]</span><b>Diproses</b></div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-nav"><span>Beranda</span><span>Tugas</span><span>Riwayat</span><span>Profil</span></div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Daftar laporan ditugaskan</h3>
+<dl><dt>Tujuan</dt><dd>Melihat semua laporan yang ditugaskan.</dd><dt>Pengguna</dt><dd>Petugas.</dd><dt>Cara berinteraksi</dt><dd>Petugas menyaring daftar lalu memilih satu laporan.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul.</strong> Nama halaman.</span></li><li><span class="no">2</span><span><strong>Saringan.</strong> Menampilkan tugas tertentu.</span></li><li><span class="no">3</span><span><strong>Daftar tugas.</strong> Judul dan status setiap tugas.</span></li><li><span class="no">4</span><span><strong>Navigasi bawah.</strong> Berpindah halaman.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Detail tugas"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Detail tugas</span><span>Kembali</span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-gambar"><span>Foto bukti</span></div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-input tinggi">Judul, kategori, deskripsi</div><div class="w-input">Catatan dari admin</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-input">Alamat dan titik GPS</div><div class="w-btn dua">Buka lokasi</div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-btn">Mulai tangani</div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Detail tugas</h3>
+<dl><dt>Tujuan</dt><dd>Memahami masalah dan lokasinya sebelum menangani.</dd><dt>Pengguna</dt><dd>Petugas.</dd><dt>Cara berinteraksi</dt><dd>Petugas membaca rincian, membuka lokasi, lalu menekan Mulai tangani.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul.</strong> Kembali ke daftar.</span></li><li><span class="no">2</span><span><strong>Foto.</strong> Kondisi yang dilaporkan.</span></li><li><span class="no">3</span><span><strong>Rincian.</strong> Informasi untuk bekerja.</span></li><li><span class="no">4</span><span><strong>Lokasi.</strong> Membantu menuju titik masalah.</span></li><li><span class="no">5</span><span><strong>Tombol mulai.</strong> Mengubah status menjadi Sedang Diproses.</span></li></ul>
+</div>
+</article>
+<article class="layar">
+<div class="wf-hp" role="group" aria-label="Wireframe Update status dan bukti selesai"><div class="wf-bagian"><span class="no">1</span><div class="w-bar"><span>Update status</span><span>Batal</span></div></div>
+<div class="wf-bagian"><span class="no">2</span><div class="w-input">Status baru</div></div>
+<div class="wf-bagian"><span class="no">3</span><div class="w-gambar"><span>Foto penyelesaian</span></div><div class="w-btn dua">Unggah foto</div></div>
+<div class="wf-bagian"><span class="no">4</span><div class="w-input tinggi">Catatan penanganan</div></div>
+<div class="wf-bagian"><span class="no">5</span><div class="w-btn">Kirim update</div></div></div>
+<div class="layar-info">
+<span class="label lanjut">Pengembangan</span>
+<h3>Update status dan bukti selesai</h3>
+<dl><dt>Tujuan</dt><dd>Melaporkan hasil penanganan.</dd><dt>Pengguna</dt><dd>Petugas.</dd><dt>Cara berinteraksi</dt><dd>Petugas memilih status, melampirkan foto hasil, menulis catatan, lalu mengirim.</dd></dl>
+<h4>Fungsi komponen</h4>
+<ul class="komponen"><li><span class="no">1</span><span><strong>Judul.</strong> Kembali tanpa menyimpan.</span></li><li><span class="no">2</span><span><strong>Pilihan status.</strong> Sedang Diproses atau Selesai.</span></li><li><span class="no">3</span><span><strong>Bukti penyelesaian.</strong> Foto hasil perbaikan.</span></li><li><span class="no">4</span><span><strong>Catatan.</strong> Menjelaskan tindakan yang dilakukan.</span></li><li><span class="no">5</span><span><strong>Tombol Kirim.</strong> Menyimpan status ke riwayat.</span></li></ul>
+</div>
+</article>
+</div>
+</div>
+</div></section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>TUNTAS</strong>. Satu platform untuk berbagai organisasi.</p>
+      <p>Website presentasi konsep. Aplikasi TUNTAS masih dalam tahap rencana.</p>
+    </div>
+  </footer>
+  <script src="app.js/script.js"></script>
+</body>
+</html>
